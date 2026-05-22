@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Architettura · MicroBot Docs</title>
+  <meta name="description" content="Documentazione MicroBot in stile wiki." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">MicroBot Docs</a>
+    <nav><a class="" href="index.html">Voce generale</a>
+<a class="active" href="architettura.html">Architettura</a>
+<a class="" href="documenti.html">Documenti</a>
+<a class="" href="formule.html">Formule</a>
+<a class="" href="archivio.html">Archivio</a>
+<a class="" href="bibliografia.html">Bibliografia</a></nav>
+  </header>
+  <main class="page">
+    
+    <aside class="toc"><strong>Indice</strong><a href="#stack">Stack</a><a href="#dimensioni">Dimensioni</a><a href="#flusso">Flusso dati</a><a href="#prototipi">Prototipi</a></aside>
+    <article class="article">
+      <h1>Architettura MicroBot</h1>
+      <p class="lead">MicroBot viene letto come architettura a livelli: fisica, elettronica, firmware, controllo PC, simulazione e pubblicazione. Questa separazione evita confusione tra prototipo reale, modello matematico e presentazione visuale.</p>
+      <section id="stack">
+        <h2>Stack funzionale</h2>
+        <table><thead><tr><th>Livello</th><th>Funzione</th><th>Nota di progetto</th></tr></thead><tbody><tr><td>PC Controller</td><td>Interfaccia utente, log, comandi, Web Serial, grafici, simulazione e modalita demo.</td><td>Deve restare utile anche senza hardware collegato.</td></tr><tr><td>Master ESP32</td><td>Nodo centrale che riceve comandi dal PC, coordina nodi e invia telemetria.</td><td>Contratto firmware chiaro, heartbeat e gestione errori.</td></tr><tr><td>Sei nodi prototipali</td><td>Unita specializzate per funzioni fisiche: sensing, movimento, docking, feedback, visione o comunicazione.</td><td>Ogni nodo deve avere test autonomo e stato leggibile.</td></tr><tr><td>Simulation Engine</td><td>Rappresentazione digitale 3D/4D/5D/6D del sistema.</td><td>Serve per validare logica e presentazione prima della miniaturizzazione.</td></tr><tr><td>Mockup fisico</td><td>Forma nera, shell, docking ring e concept CAD.</td><td>Distingue estetica finale da prototipo funzionale.</td></tr><tr><td>Safety layer</td><td>Timeout, stop, limiti termici, limiti corrente, fallback demo e log.</td><td>Evita che il sistema sembri fragile o pericoloso.</td></tr></tbody></table>
+      </section>
+      <section id="dimensioni">
+        <h2>Interpretazione 3D/4D/5D/6D</h2>
+        <p>Nel sito la formula dimensionale viene trattata in modo computazionale: 3D significa posizione e scena; 4D aggiunge tempo e stato; 5D aggiunge parametri fisici come energia, temperatura, campo, attrito e batteria; 6D rappresenta logiche di comportamento, controllo, intenzione di comando o stati emergenti della rete.</p>
+        <p>Questa scelta e importante perche rende il concetto difendibile: non si afferma una nuova fisica, ma si usa una notazione estesa per visualizzare variabili multiple in un unico digital twin.</p>
+      </section>
+      <section id="flusso">
+        <h2>Flusso dati minimo</h2>
+        <ol>
+          <li>L'utente invia un comando dalla dashboard.</li>
+          <li>Il browser trasmette il comando al Master tramite seriale o bridge equivalente.</li>
+          <li>Il Master valida, esegue o inoltra il comando al nodo corretto.</li>
+          <li>Il nodo restituisce stato, telemetria o errore.</li>
+          <li>Dashboard e simulatore aggiornano visualizzazione, log e grafici.</li>
+        </ol>
+      </section>
+      <section id="prototipi">
+        <h2>Prototipi v0.1</h2>
+        <p>La documentazione insiste su un principio sano: i primi prototipi devono dimostrare funzioni, non miniaturizzazione perfetta. La forma finale puo essere piu piccola e raffinata, ma le prove iniziali devono validare comunicazione, sensing, risposta, aggancio, telemetria e controllo.</p>
+      </section>
+    </article>
+    
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

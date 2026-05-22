@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formule · MicroBot Docs</title>
+  <meta name="description" content="Documentazione MicroBot in stile wiki." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">MicroBot Docs</a>
+    <nav><a class="" href="index.html">Voce generale</a>
+<a class="" href="architettura.html">Architettura</a>
+<a class="" href="documenti.html">Documenti</a>
+<a class="active" href="formule.html">Formule</a>
+<a class="" href="archivio.html">Archivio</a>
+<a class="" href="bibliografia.html">Bibliografia</a></nav>
+  </header>
+  <main class="page">
+    
+    <aside class="toc"><strong>Indice</strong><a href="#nucleo">Nucleo</a><a href="#tabella">Tabella</a><a href="#laboratorio">Laboratorio</a></aside>
+    <article class="article">
+      <h1>Formule e modello fisico</h1>
+      <p class="lead">La parte matematica collega geometria, dinamica, elettricita, magnetismo, termica e controllo. Il laboratorio originale e stato mantenuto come pagina separata.</p>
+      <section id="nucleo">
+        <h2>Nucleo interpretativo</h2>
+        <p>La formula madre <code>F_i = grad[m_i · B_tot(r_i,t)]</code> riassume il comportamento: un modulo con momento magnetico immerso in un campo non uniforme tende a muoversi lungo il gradiente energetico. Tutte le altre formule servono a rendere questa frase ingegneristicamente utile: distanza, massa, attrito, corrente, induttanza, temperatura, batteria e soglie logiche.</p>
+      </section>
+      <section id="tabella">
+        <h2>Tabella delle relazioni</h2>
+        <table><thead><tr><th>Relazione</th><th>Formula</th><th>Uso in MicroBot</th></tr></thead><tbody><tr><td>Distanza euclidea</td><td><code>d = sqrt((x2 - x1)^2 + (y2 - y1)^2)</code></td><td>Geometria e prossimita tra moduli.</td></tr><tr><td>Seconda legge di Newton</td><td><code>F = m a</code></td><td>Collega forze magnetiche, massa e accelerazione reale.</td></tr><tr><td>Attrito statico</td><td><code>F_attr,max = mu_s N</code></td><td>Soglia da superare per movimento o tenuta.</td></tr><tr><td>Momento magnetico totale</td><td><code>m_i = N_i I_i A_i n_i + m_p,i</code></td><td>Parte attiva della bobina piu contributo dei magneti permanenti.</td></tr><tr><td>Campo magnetico esterno</td><td><code>B_ext(r_i,t) = sum_k B_k(r_i,t)</code></td><td>Campo generato da bobine e sorgenti vicine.</td></tr><tr><td>Circuito bobina</td><td><code>V_i = R_i(T_i) I_i + L_i dI_i/dt + d(M_ij I_j)/dt</code></td><td>Risposta elettrica non istantanea e mutua induttanza.</td></tr><tr><td>Bilancio termico</td><td><code>C_th dT/dt = I^2 R(T) - h(T - T_amb)</code></td><td>Costo termico del controllo magnetico.</td></tr><tr><td>Forza dipolo-dipolo</td><td><code>F_mag = grad U_dipolo</code></td><td>Attrazione/repulsione tra moduli magnetici.</td></tr><tr><td>Condizione reale di aggancio</td><td><code>|F_mag| &gt; F_attrito + F_disturbo + m g sin(alpha)</code></td><td>Trasforma aggancio teorico in criterio verificabile.</td></tr><tr><td>Formula madre</td><td><code>F_i = grad[m_i · B_tot(r_i,t)]</code></td><td>Sintesi del moto guidato da energia magnetica non uniforme.</td></tr><tr><td>Energia nell&#x27;induttanza</td><td><code>E_L = 1/2 L I^2</code></td><td>Energia immagazzinata nel campo della bobina.</td></tr><tr><td>Isteresi</td><td><code>attach se d &lt;= d_attach, detach se d &gt;= d_detach</code></td><td>Evita commutazioni instabili vicino alla soglia.</td></tr></tbody></table>
+      </section>
+      <section id="laboratorio">
+        <h2>Laboratorio interattivo</h2>
+        <p>La web app <code>spiegazione_formule_v2</code> e disponibile come modulo separato, con HTML, CSS e JavaScript originali copiati in questa pubblicazione.</p>
+        <p><a class="button" href="laboratorio-formule/index.html">Apri laboratorio formule</a></p>
+      </section>
+    </article>
+    
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

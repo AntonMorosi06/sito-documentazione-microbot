@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MicroBot Formula System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="glow"></div>
+  <div class="glow-two"></div>
+
+  <div class="formula-background">
+    <span class="bg-formula f1">d = √((x₂ - x₁)² + (y₂ - y₁)²)</span>
+    <span class="bg-formula f2">F = m · a</span>
+    <span class="bg-formula f3">V = R · I</span>
+    <span class="bg-formula f4">P_J = I² · R</span>
+    <span class="bg-formula f5">U = - m · B</span>
+    <span class="bg-formula f6">τ = L / R</span>
+    <span class="bg-formula f7">F_tot = F_mag - F_attr - γv</span>
+    <span class="bg-formula f8">attach if d ≤ d_attach</span>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>MicroBot Formula System</span>
+      </div>
+
+      <nav class="menu">
+        <a href="#intro">Introduzione</a>
+        <a href="#equations">Formule</a>
+        <a href="#analysis">Analisi</a>
+        <a href="#graphs">Grafici</a>
+        <a href="#model">Sistema</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="tag">Mathematical, Electromagnetic and Physical Core</p>
+          <h1>
+            Tutte le formule
+            <span>matematiche</span>
+            di MicroBot
+          </h1>
+
+          <p class="hero-text">
+            Una piattaforma visiva scura, tecnica e interattiva per spiegare in modo rigoroso la struttura matematica, elettrica, elettromagnetica, termica e dinamica del progetto MicroBot. Il sistema non viene più descritto solo con formule base, ma con un modello completo che collega distanza, energia, campo magnetico, forza, aggancio, dissipazione e controllo.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#equations">Esplora le formule</a>
+            <a class="btn btn-secondary" href="#analysis">Apri il dettaglio</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat reveal">
+              <strong>20</strong>
+              <span>Formule totali</span>
+            </div>
+            <div class="stat reveal">
+              <strong>05</strong>
+              <span>Blocchi fisici</span>
+            </div>
+            <div class="stat reveal">
+              <strong>01</strong>
+              <span>Dettaglio espandibile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="visual-card">
+            <div class="visual-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="visual-core">
+              <div class="orbit one"></div>
+              <div class="orbit two"></div>
+
+              <div class="controller"></div>
+
+              <div class="bot b1"></div>
+              <div class="bot b2"></div>
+              <div class="bot b3"></div>
+              <div class="bot b4"></div>
+              <div class="bot b5"></div>
+
+              <div class="link l1"></div>
+              <div class="link l2"></div>
+              <div class="link l3"></div>
+            </div>
+
+            <div class="visual-footer">
+              Coordinate → Corrente → Campo → Forza → Aggancio
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="intro">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">Introduzione</p>
+          <h2>Perché MicroBot ha bisogno di una struttura matematica ed elettromagnetica rigorosa</h2>
+          <p>
+            Per trasformare MicroBot da idea concettuale a sistema coerente serve una descrizione quantitativa multilivello. Ogni unità deve poter essere rappresentata nello spazio, descritta nel tempo, letta dal punto di vista energetico, compresa attraverso l’elettromagnetismo e controllata mediante soglie fisiche, logiche e dinamiche. Il sito ora non descrive solo relazioni base, ma un modello tecnico più ampio che unisce geometria, meccanica, elettricità, campo magnetico, dissipazione termica e comportamento collettivo.
+          </p>
+        </div>
+
+        <div class="intro-grid">
+          <article class="panel reveal">
+            <h3>Geometria e stato del sistema</h3>
+            <p>
+              Ogni MicroBot viene descritto attraverso coordinate, distanze, velocità, accelerazioni e logiche di prossimità. Questo costituisce il primo livello del modello, quello che permette di capire posizione, variazione del moto e possibilità di contatto.
+            </p>
+          </article>
+
+          <article class="panel reveal">
+            <h3>Elettricità, energia e risposta dinamica</h3>
+            <p>
+              La corrente nelle bobine, la tensione di alimentazione, la dissipazione resistiva, l’energia nell’induttanza e la costante di tempo del circuito definiscono quanto il sistema possa reagire rapidamente e quanto costi energeticamente ogni azione.
+            </p>
+          </article>
+
+          <article class="panel reveal">
+            <h3>Elettromagnetismo, aggancio e stabilità</h3>
+            <p>
+              Il momento magnetico, il campo totale, la forza dipolo-dipolo, la coppia magnetica e le condizioni reali di aggancio spiegano come due moduli possano avvicinarsi, orientarsi, restare uniti o staccarsi in modo controllato.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="equations">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">Formule principali</p>
+          <h2>Il nucleo matematico, elettrico ed elettromagnetico del sistema MicroBot</h2>
+          <p>
+            Seleziona una formula per visualizzare significato fisico, variabili, interpretazione operativa e spiegazione approfondita espandibile.
+          </p>
+        </div>
+
+        <div class="equation-grid">
+          <article class="equation-card active reveal" data-key="distance">
+            <span class="eq-index">01</span>
+            <h3>Distanza euclidea</h3>
+            <div class="formula-box">d = √((x₂ - x₁)² + (y₂ - y₁)²)</div>
+            <p>Misura la distanza tra due MicroBot nel piano.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="force">
+            <span class="eq-index">02</span>
+            <h3>Seconda legge di Newton</h3>
+            <div class="formula-box">F = m · a</div>
+            <p>Collega massa, accelerazione e forza applicata.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="friction">
+            <span class="eq-index">03</span>
+            <h3>Attrito statico</h3>
+            <div class="formula-box">F_attr,max = μs · N</div>
+            <p>Stima la soglia minima di tenuta meccanica.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="magneticMoment">
+            <span class="eq-index">04</span>
+            <h3>Momento magnetico totale</h3>
+            <div class="formula-box">mᵢ = Nᵢ Iᵢ Aᵢ n̂ᵢ + mₚ,ᵢ</div>
+            <p>Descrive il contributo attivo della bobina e quello passivo dei magneti permanenti.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="field">
+            <span class="eq-index">05</span>
+            <h3>Campo magnetico esterno</h3>
+            <div class="formula-box">B_ext(rᵢ,t) = Σ [ μ₀ Nₖ Iₖ(t) / (2 Rₖ) ] (1 + xₖ(rᵢ)² / Rₖ²)^(-3/2) ẑₖ</div>
+            <p>Modella il campo generato dalle bobine nel punto occupato dal MicroBot.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="voltage">
+            <span class="eq-index">06</span>
+            <h3>Equazione circuitale della bobina</h3>
+            <div class="formula-box">Vᵢ(t) = Rᵢ(Tᵢ) Iᵢ + Lᵢ dIᵢ/dt + d/dt [ Mᵢⱼ(r) Iⱼ ]</div>
+            <p>Introduce resistenza, induttanza e mutua induttanza tra moduli o bobine vicine.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="thermal">
+            <span class="eq-index">07</span>
+            <h3>Bilancio termico</h3>
+            <div class="formula-box">C_th,ᵢ dTᵢ/dt = Iᵢ² Rᵢ(Tᵢ) - hᵢ (Tᵢ - T_amb)</div>
+            <p>Descrive come il MicroBot si scalda e quanto riesce a dissipare verso l’esterno.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="dipoleForce">
+            <span class="eq-index">08</span>
+            <h3>Forza dipolo-dipolo</h3>
+            <div class="formula-box">F_mag,ᵢⱼ = ∇ [ μ₀ / (4π rᵢⱼ³) ( 3(mᵢ·r̂ᵢⱼ)(mⱼ·r̂ᵢⱼ) - mᵢ·mⱼ ) ]</div>
+            <p>Spiega l’attrazione o repulsione tra due MicroBot modellati come dipoli magnetici.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="attachCondition">
+            <span class="eq-index">09</span>
+            <h3>Condizione reale di aggancio</h3>
+            <div class="formula-box">|F_mag,ᵢⱼ| &gt; F_attrito + F_disturbo + m g sinα</div>
+            <p>Stabilisce quando l’aggancio magnetico diventa davvero efficace nel mondo reale.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="masterForce">
+            <span class="eq-index">10</span>
+            <h3>Formula madre del MicroBot</h3>
+            <div class="formula-box">Fᵢ = ∇ [ mᵢ · B_tot(rᵢ,t) ]</div>
+            <p>È la sintesi del modello: il MicroBot si muove perché il suo stato magnetico interagisce con un campo non uniforme.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="ohm">
+            <span class="eq-index">11</span>
+            <h3>Legge di Ohm</h3>
+            <div class="formula-box">V = R · I</div>
+            <p>Collega tensione, resistenza e corrente nel circuito del MicroBot.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="joule">
+            <span class="eq-index">12</span>
+            <h3>Effetto Joule</h3>
+            <div class="formula-box">P_J = I² · R</div>
+            <p>Mostra quanta potenza viene dissipata in calore.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="inductiveEnergy">
+            <span class="eq-index">13</span>
+            <h3>Energia nell’induttanza</h3>
+            <div class="formula-box">E_L = 1/2 · L · I²</div>
+            <p>Descrive l’energia immagazzinata nel campo magnetico della bobina.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="rlCurrent">
+            <span class="eq-index">14</span>
+            <h3>Corrente nel circuito RL</h3>
+            <div class="formula-box">I(t) = (V/R)(1 - e^(-tR/L))</div>
+            <p>Spiega la crescita graduale della corrente nella bobina.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="rlTau">
+            <span class="eq-index">15</span>
+            <h3>Costante di tempo RL</h3>
+            <div class="formula-box">τ = L / R</div>
+            <p>Indica la rapidità di risposta del circuito elettromagnetico.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="magneticPotential">
+            <span class="eq-index">16</span>
+            <h3>Energia potenziale magnetica</h3>
+            <div class="formula-box">U = - m · B</div>
+            <p>Descrive la tendenza del modulo verso stati energeticamente favorevoli.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="magneticTorque">
+            <span class="eq-index">17</span>
+            <h3>Coppia magnetica</h3>
+            <div class="formula-box">τ_mag = m × B</div>
+            <p>Spiega la rotazione e l’allineamento del MicroBot nel campo.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="totalForce">
+            <span class="eq-index">18</span>
+            <h3>Forza totale semplificata</h3>
+            <div class="formula-box">F_tot = F_mag - F_attr - γv</div>
+            <p>Riassume il bilancio tra spinta magnetica e resistenze.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="batteryLife">
+            <span class="eq-index">19</span>
+            <h3>Autonomia stimata</h3>
+            <div class="formula-box">t_batt ≈ C / I_medio</div>
+            <p>Fornisce una stima della durata operativa della batteria.</p>
+          </article>
+
+          <article class="equation-card reveal" data-key="hysteresis">
+            <span class="eq-index">20</span>
+            <h3>Isteresi completa</h3>
+            <div class="formula-box">attach se d ≤ d_attach , detach se d ≥ d_detach</div>
+            <p>Rende il sistema più stabile evitando continui cambi di stato.</p>
+          </article>
+        </div>
+
+        <div class="detail reveal" id="analysis">
+          <p class="tag">Analisi dettagliata</p>
+          <h3 class="detail-title" id="detailTitle">Distanza euclidea</h3>
+          <div class="detail-formula" id="detailFormula">d = √((x₂ - x₁)² + (y₂ - y₁)²)</div>
+
+          <p id="detailText">
+            Questa formula misura la distanza geometrica tra due MicroBot nel piano.
+          </p>
+
+          <div class="variables" id="detailVars"></div>
+
+          <div class="accordion-wrap">
+            <button class="accordion-toggle" id="accordionToggle" type="button" aria-expanded="false">
+              <span>Apri spiegazione approfondita</span>
+              <span class="accordion-icon">+</span>
+            </button>
+
+            <div class="accordion-content" id="accordionContent">
+              <div class="accordion-inner" id="detailExtended">
+                Qui comparirà la spiegazione approfondita della formula selezionata.
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator" id="distanceCalculator"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="control-panel" class="control-panel-section reveal">
+  <div class="container">
+    <div class="section-head">
+      <p class="tag">Control Panel</p>
+      <h2>Parametri live del sistema MicroBot</h2>
+      <p>
+        Modifica in tempo reale i parametri principali del modello per osservare come cambiano
+        distanza di aggancio, forza risultante, comportamento dinamico e lettura matematica del sistema.
+      </p>
+    </div>
+
+    <div class="control-panel">
+      <div class="control-card">
+        <h3>Parametri geometrici e logici</h3>
+
+        <div class="slider-group">
+          <label for="attachThresholdRange">
+            Soglia di aggancio
+            <span id="attachThresholdValue">120</span>
+          </label>
+          <input type="range" id="attachThresholdRange" min="60" max="220" value="120" step="1" />
+        </div>
+
+        <div class="slider-group">
+          <label for="detachThresholdRange">
+            Soglia di sgancio
+            <span id="detachThresholdValue">155</span>
+          </label>
+          <input type="range" id="detachThresholdRange" min="80" max="260" value="155" step="1" />
+        </div>
+
+        <div class="slider-group">
+          <label for="disturbRange">
+            Disturbo dinamico
+            <span id="disturbValue">0.08</span>
+          </label>
+          <input type="range" id="disturbRange" min="0" max="0.5" value="0.08" step="0.01" />
+        </div>
+      </div>
+
+      <div class="control-card">
+        <h3>Parametri fisici</h3>
+
+        <div class="slider-group">
+          <label for="massRange">
+            Massa modulo
+            <span id="massValue">0.05</span>
+          </label>
+          <input type="range" id="massRange" min="0.01" max="0.2" value="0.05" step="0.01" />
+        </div>
+
+        <div class="slider-group">
+          <label for="muRange">
+            Coefficiente di attrito
+            <span id="muValue">0.45</span>
+          </label>
+          <input type="range" id="muRange" min="0.05" max="1.2" value="0.45" step="0.01" />
+        </div>
+
+        <div class="slider-group">
+          <label for="normalRange">
+            Forza normale
+            <span id="normalValue">1.80</span>
+          </label>
+          <input type="range" id="normalRange" min="0.2" max="5" value="1.8" step="0.05" />
+        </div>
+      </div>
+
+      <div class="control-card">
+        <h3>Parametri elettromagnetici</h3>
+
+        <div class="slider-group">
+          <label for="currentRange">
+            Corrente bobina
+            <span id="currentValue">0.25</span>
+          </label>
+          <input type="range" id="currentRange" min="0.05" max="2" value="0.25" step="0.01" />
+        </div>
+
+        <div class="slider-group">
+          <label for="turnsRange">
+            Numero di spire
+            <span id="turnsValue">120</span>
+          </label>
+          <input type="range" id="turnsRange" min="20" max="400" value="120" step="1" />
+        </div>
+
+        <div class="slider-group">
+          <label for="areaRange">
+            Area efficace
+            <span id="areaValue">0.00012</span>
+          </label>
+          <input type="range" id="areaRange" min="0.00001" max="0.001" value="0.00012" step="0.00001" />
+        </div>
+      </div>
+    </div>
+
+    <div class="control-results">
+      <div class="control-result-card">
+        <strong>Momento magnetico attivo</strong>
+        <span id="liveMagMoment">0.0000</span>
+      </div>
+
+      <div class="control-result-card">
+        <strong>Attrito massimo</strong>
+        <span id="liveFriction">0.0000</span>
+      </div>
+
+      <div class="control-result-card">
+        <strong>Forza magnetica stimata</strong>
+        <span id="liveMagForce">0.0000</span>
+      </div>
+
+      <div class="control-result-card">
+        <strong>Forza netta stimata</strong>
+        <span id="liveNetForce">0.0000</span>
+      </div>
+
+      <div class="control-result-card">
+        <strong>Accelerazione stimata</strong>
+        <span id="liveAcceleration">0.0000</span>
+      </div>
+
+      <div class="control-result-card">
+        <strong>Stato globale</strong>
+        <span id="liveSystemState">In attesa</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="microbot-sim reveal">
+      <div class="sim-top">
+        <p class="tag">Distance Visualizer</p>
+        <h3>Visualizzazione dinamica della distanza tra due MicroBot</h3>
+        <p>
+          Due unità si muovono nello spazio 2D. La linea di collegamento e la distanza
+          vengono aggiornate in tempo reale.
+        </p>
+      </div>
+
+      <div class="sim-board" id="simBoard">
+        <div class="sim-grid"></div>
+        <div class="sim-link" id="simLink"></div>
+        <div class="attach-zone" id="attachZone"></div>
+
+        <div class="sim-bot bot-a" id="botA">
+          <span>A</span>
+        </div>
+
+        <div class="sim-bot bot-b" id="botB">
+          <span>B</span>
+        </div>
+      </div>
+
+      <div class="sim-stats">
+        <div class="sim-stat">
+          <strong>Bot A</strong>
+          <span id="coordA">(0.00, 0.00)</span>
+        </div>
+
+        <div class="sim-stat">
+          <strong>Bot B</strong>
+          <span id="coordB">(0.00, 0.00)</span>
+        </div>
+
+        <div class="sim-stat">
+          <strong>Distanza</strong>
+          <span id="distanceLive">0.00</span>
+        </div>
+
+        <div class="sim-stat">
+          <strong>Stato</strong>
+          <span id="attachState">Fuori soglia</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="live-math-panel">
+      <div class="live-math-head">
+        <p class="tag">Live Formula Check</p>
+        <h3>Verifica matematica in tempo reale</h3>
+      </div>
+
+      <div class="live-math-box">
+        <div class="math-line" id="mathDistanceLine">
+          d = 0.00
+        </div>
+
+        <div class="math-line" id="mathCompareLine">
+          0.00 ≤ 120.00
+        </div>
+
+        <div class="math-line" id="mathStateLine">
+          attach = false
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">Spiegazione estesa</p>
+          <h2>Interpretazione rigorosa del modello MicroBot</h2>
+        </div>
+
+        <div class="text-grid">
+          <article class="text-card reveal">
+            <h3>1. Geometria e prossimità</h3>
+            <p>
+              La distanza euclidea è il primo indicatore che consente al sistema di capire quando due moduli possano iniziare a essere trattati come fisicamente rilevanti l’uno per l’altro. Da qui nasce tutta la logica di vicinanza, riconoscimento e possibile contatto.
+            </p>
+          </article>
+
+          <article class="text-card reveal">
+            <h3>2. Dinamica del moto</h3>
+            <p>
+              Velocità, accelerazione e forza collegano il mondo geometrico a quello fisico. Il MicroBot non viene descritto come semplice punto nello spazio, ma come corpo che reagisce a forze reali, subisce inerzia e mostra un comportamento dinamico controllabile.
+            </p>
+          </article>
+
+          <article class="text-card reveal">
+            <h3>3. Elettricità e alimentazione</h3>
+            <p>
+              La legge di Ohm, la potenza elettrica e la stima dell’autonomia introducono il costo reale del funzionamento. Ogni azione del sistema richiede energia e deve quindi essere letta non solo come possibilità fisica, ma anche come sostenibilità elettrica.
+            </p>
+          </article>
+
+          <article class="text-card reveal">
+            <h3>4. Campo magnetico e momento magnetico</h3>
+            <p>
+              Il MicroBot genera e subisce effetti magnetici grazie alla combinazione tra bobine attive e magneti permanenti. Questo rende il sistema ibrido: controllabile nel tempo ma anche predisposto all’allineamento e al pre-aggancio in modo passivo.
+            </p>
+          </article>
+
+          <article class="text-card reveal">
+            <h3>5. Attrito, aggancio e isteresi</h3>
+            <p>
+              L’aggancio reale non dipende soltanto dall’esistenza di un campo magnetico. Deve superare soglie meccaniche reali, come attrito e disturbi, e deve essere stabilizzato tramite isteresi per evitare oscillazioni continue vicino ai limiti operativi.
+            </p>
+          </article>
+
+          <article class="text-card reveal">
+            <h3>6. Dissipazione e termica</h3>
+            <p>
+              L’effetto Joule e il bilancio termico mostrano che il magnetismo utile non è gratuito. Ogni aumento di corrente migliora certe prestazioni ma aumenta anche il riscaldamento, rendendo necessario un compromesso tra forza disponibile, autonomia ed efficienza.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphs">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="tag">Visualizzazione avanzata</p>
+      <h2>Grafici estesi per leggere il comportamento del sistema MicroBot</h2>
+      <p>
+        Questa sezione amplia la lettura del sistema con grafici cinematici, energetici,
+        elettromagnetici, termici e logici. Ogni pannello mostra una grandezza diversa
+        e aiuta a capire come il comportamento del MicroBot emerga dall’interazione tra
+        geometria, corrente, campo magnetico, attrito, dissipazione e stabilità.
+      </p>
+    </div>
+
+    <div class="graph-section reveal">
+      <div class="graph-section-head">
+        <p class="tag">Cinematica</p>
+        <h3>Evoluzione del moto e della prossimità</h3>
+      </div>
+
+      <div class="graph-grid graph-grid-extended">
+        <article class="graph-card reveal">
+          <h3>Distanza tra due MicroBot nel tempo</h3>
+          <p>Mostra una traiettoria di avvicinamento verso la zona di aggancio.</p>
+          <canvas id="distanceCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Velocità nel tempo</h3>
+          <p>Descrive la rapidità con cui cambia la posizione durante l’avvicinamento.</p>
+          <canvas id="velocityCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Accelerazione nel tempo</h3>
+          <p>Mostra variazioni di risposta dinamica, frenata o correzione del moto.</p>
+          <canvas id="accelerationCanvas" width="360" height="220"></canvas>
+        </article>
+      </div>
+    </div>
+
+    <div class="graph-section reveal">
+      <div class="graph-section-head">
+        <p class="tag">Interazione fisica</p>
+        <h3>Forze, attrito e soglia di contatto</h3>
+      </div>
+
+      <div class="graph-grid graph-grid-extended">
+        <article class="graph-card reveal">
+          <h3>Forza di interazione normalizzata</h3>
+          <p>La forza cresce quando la distanza diminuisce e la zona di contatto si avvicina.</p>
+          <canvas id="forceCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Attrito e soglia di aggancio</h3>
+          <p>Confronta la forza resistente con la zona in cui l’aggancio diventa possibile.</p>
+          <canvas id="frictionThresholdCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Forza totale risultante</h3>
+          <p>Bilancio tra forza magnetica utile, attrito e dissipazione dinamica.</p>
+          <canvas id="totalForceCanvas" width="360" height="220"></canvas>
+        </article>
+      </div>
+    </div>
+
+    <div class="graph-section reveal">
+      <div class="graph-section-head">
+        <p class="tag">Elettricità ed energia</p>
+        <h3>Risposta del circuito e consumo operativo</h3>
+      </div>
+
+      <div class="graph-grid graph-grid-extended">
+        <article class="graph-card reveal">
+          <h3>Corrente RL nel tempo</h3>
+          <p>Visualizza la crescita non istantanea della corrente nella bobina.</p>
+          <canvas id="rlCurrentCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Potenza assorbita nel tempo</h3>
+          <p>Rende visibile il costo energetico istantaneo di una fase operativa.</p>
+          <canvas id="powerCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Consumo energetico cumulato</h3>
+          <p>Mostra l’energia totale spesa durante una sequenza di attivazioni.</p>
+          <canvas id="energyCanvas" width="360" height="220"></canvas>
+        </article>
+      </div>
+    </div>
+
+    <div class="graph-section reveal">
+      <div class="graph-section-head">
+        <p class="tag">Elettromagnetismo</p>
+        <h3>Campo, energia e orientamento del modulo</h3>
+      </div>
+
+      <div class="graph-grid graph-grid-extended">
+        <article class="graph-card reveal">
+          <h3>Campo magnetico vs distanza</h3>
+          <p>Il campo si riduce con l’allontanamento dalla sorgente.</p>
+          <canvas id="fieldCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Energia potenziale magnetica</h3>
+          <p>Mostra come il sistema tenda a configurazioni energeticamente favorevoli.</p>
+          <canvas id="potentialCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Coppia magnetica vs angolo</h3>
+          <p>Rende visibile la tendenza del MicroBot ad allinearsi al campo.</p>
+          <canvas id="torqueCanvas" width="360" height="220"></canvas>
+        </article>
+      </div>
+    </div>
+
+    <div class="graph-section reveal">
+      <div class="graph-section-head">
+        <p class="tag">Termica e logica di stato</p>
+        <h3>Dissipazione, isteresi e comportamento operativo</h3>
+      </div>
+
+      <div class="graph-grid graph-grid-extended">
+        <article class="graph-card reveal">
+          <h3>Temperatura nel tempo</h3>
+          <p>Il modulo si scalda con l’uso prolungato delle bobine e poi si stabilizza.</p>
+          <canvas id="temperatureCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Zona di isteresi</h3>
+          <p>Mostra la differenza tra soglia di aggancio e soglia di sgancio.</p>
+          <canvas id="hysteresisCanvas" width="360" height="220"></canvas>
+        </article>
+
+        <article class="graph-card reveal">
+          <h3>Stato logico del sistema</h3>
+          <p>Visualizza il passaggio tra fuori soglia, pending e aggancio attivo.</p>
+          <canvas id="stateCanvas" width="360" height="220"></canvas>
+        </article>
+      </div>
+    </div>
+
+    <div class="dynamic-explainer reveal">
+      <div class="dynamic-explainer-head">
+        <p class="tag">Lettura dinamica</p>
+        <h3>Interpretazione tecnica dei grafici</h3>
+      </div>
+
+      <div class="dynamic-explainer-box" id="graphExplainer">
+        Seleziona o osserva un grafico per leggere un’interpretazione tecnica del comportamento mostrato.
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="model">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="tag">Modello del sistema</p>
+          <h2>Sequenza essenziale del comportamento MicroBot</h2>
+        </div>
+
+        <div class="model reveal">
+          <div class="model-line">
+            <span class="step">1</span>
+            <p>Il controller stima posizione, distanza reciproca e stato operativo dei moduli presenti nel sistema.</p>
+          </div>
+
+          <div class="model-line">
+            <span class="step">2</span>
+            <p>Le variabili geometriche vengono tradotte in logiche di prossimità, soglie di aggancio e possibili comandi di attivazione.</p>
+          </div>
+
+          <div class="model-line">
+            <span class="step">3</span>
+            <p>Le bobine generano momenti magnetici controllabili che si sommano al contributo dei magneti permanenti interni.</p>
+          </div>
+
+          <div class="model-line">
+            <span class="step">4</span>
+            <p>Il campo totale prodotto nel sistema crea condizioni di allineamento, attrazione, repulsione o stabilizzazione tra i MicroBot.</p>
+          </div>
+
+          <div class="model-line">
+            <span class="step">5</span>
+            <p>La forza magnetica effettiva viene confrontata con attrito, disturbi, dissipazione e vincoli energetici per verificare se il comportamento sia davvero sostenibile e stabile.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>MicroBot Mathematical Core — Advanced Formula Interface</p>
+      <p>Geometria, dinamica, elettricità, elettromagnetismo, termica e controllo</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

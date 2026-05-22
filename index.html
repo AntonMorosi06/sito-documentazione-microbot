@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voce generale · MicroBot Docs</title>
+  <meta name="description" content="Documentazione enciclopedica del progetto MicroBot." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">MicroBot Docs</a>
+    <nav><a class="active" href="index.html">Voce generale</a>
+<a class="" href="architettura.html">Architettura</a>
+<a class="" href="documenti.html">Documenti</a>
+<a class="" href="formule.html">Formule</a>
+<a class="" href="archivio.html">Archivio</a>
+<a class="" href="bibliografia.html">Bibliografia</a></nav>
+  </header>
+  <main class="page">
+    
+    <aside class="toc">
+      <strong>Indice</strong>
+      <a href="#sintesi">Sintesi</a>
+      <a href="#metodo">Metodo</a>
+      <a href="#mappa">Mappa tecnica</a>
+      <a href="#documenti">Documenti</a>
+      <a href="#limiti">Limiti dichiarati</a>
+    </aside>
+    <article class="article">
+      <h1>MicroBot Documentation Wiki</h1>
+      <p class="lead">Questa pubblicazione riordina i file MicroBot in una documentazione leggibile in stile wiki: niente sorgenti originali modificati, solo analisi, copie pubblicabili dei PDF progettuali, inventari e pagine HTML statiche per GitHub Pages.</p>
+      <section id="sintesi">
+        <h2>Sintesi enciclopedica</h2>
+        <p>MicroBot e una piattaforma sperimentale di robotica distribuita e materia programmabile in forma prototipale. Il progetto non va letto come un singolo robot gia definitivo, ma come un ecosistema composto da hardware, firmware, dashboard, simulazione, modelli fisici, testing, sicurezza, documentazione e strategia di pubblicazione.</p>
+        <p>La versione documentata punta a una v0.1 credibile: un controller PC, un Master ESP32, sei nodi specializzati, una simulazione 3D/4D/5D/6D interpretata in modo computazionale e un mockup fisico nero che rappresenta la direzione estetica finale.</p>
+        <div class="metrics"><div class="metric"><strong>15</strong><span>PDF locali ordinati</span></div><div class="metric"><strong>1178</strong><span>Pagine PDF principale</span></div><div class="metric"><strong>204.693</strong><span>Entry inventariate nello zip</span></div><div class="metric"><strong>204</strong><span>PDF nello zip</span></div><div class="metric"><strong>18.755</strong><span>File doc/code utili nello zip</span></div><div class="metric"><strong>33</strong><span>PDF MicroBot copiati dall&#x27;archivio</span></div></div>
+      </section>
+      <section id="metodo">
+        <h2>Metodo di analisi</h2>
+        <p>Ho trattato i file indicati come fonti primarie: PDF, cartelle ordinate, sito delle formule, file Pages e archivio <code>finefine 2.zip</code>. Lo zip contiene anche ambienti virtuali, cache, duplicati e metadati macOS; questi non sono stati pubblicati come contenuto narrativo, ma sono stati inventariati nel catalogo completo.</p>
+        <ul>
+          <li>Le copie PDF pubblicate sono derivate dai documenti MicroBot forniti e da PDF progettuali MicroBot presenti nell'archivio.</li>
+          <li>I riferimenti esterni e i libri individuati nello zip sono citati come fonti di studio, non redistribuiti come file pubblici.</li>
+          <li>La pagina formule conserva il laboratorio HTML/CSS/JS originale in una sezione separata e consultabile.</li>
+          <li>Il catalogo zip permette di controllare l'esistenza delle fonti senza appesantire la home.</li>
+        </ul>
+      </section>
+      <section id="mappa">
+        <h2>Mappa tecnica del sistema</h2>
+        <div class="map-grid">
+          <article><h3>Visione</h3><p>Passaggio da robot singolo a sistema distribuito, con comportamento emergente e modularita.</p></article>
+          <article><h3>Hardware</h3><p>Master ESP32, sei nodi, sensori, bobine/magneti, alimentazione e mockup fisico.</p></article>
+          <article><h3>Firmware</h3><p>Protocollo di comando, telemetria, heartbeat, errori e coordinamento tra PC e nodi.</p></article>
+          <article><h3>Dashboard</h3><p>Interfaccia operativa con Web Serial, pannelli nodo, log, grafici e modalita demo.</p></article>
+          <article><h3>Simulazione</h3><p>Digital twin parametrico: posizione, tempo, energia, stato, controllo e comportamento.</p></article>
+          <article><h3>Validazione</h3><p>Test unitari, integrazione, safety, stress test, runbook e prove di presentazione.</p></article>
+        </div>
+      </section>
+      <section id="documenti">
+        <h2>Documenti principali</h2>
+        <div class="doc-grid">
+        <article class="doc-card">
+          <div><span class="badge">Indice generale</span> <span class="badge">Archivio maestro</span></div>
+          <h3><a href="documenti.html#documentazione-generale">Documentazione MicroBot</a></h3>
+          <p>PDF principale di 1178 pagine: funziona come indice ragionato dell&#x27;intero ecosistema MicroBot, dalla visione iniziale alla struttura dello zip, fino a hardware, software, simulazione, AI, BCI, sicurezza e pubblicazione.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Strategia</span> <span class="badge">Sintesi presentabile</span></div>
+          <h3><a href="documenti.html#executive-summary">Documento 01 - Executive Summary</a></h3>
+          <p>Sintesi ad alta densita per professori, collaboratori, portfolio e pitch: inquadra MicroBot come piattaforma sperimentale che unisce robotica distribuita, materia programmabile, prototipi fisici, simulazione 3D/4D/5D/6D e dashboard PC.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Hardware</span> <span class="badge">Distinta base</span></div>
+          <h3><a href="documenti.html#bom-acquisti">Documento 02 - BOM e Piano Acquisti</a></h3>
+          <p>Definisce cosa comprare, quando comprarlo e come organizzare i componenti per costruire Master ESP32, sei nodi, controller PC, simulazione e mockup senza acquisti casuali.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Hardware</span> <span class="badge">Specifiche elettroniche</span></div>
+          <h3><a href="documenti.html#hardware-architecture">Documento 03 - Hardware Architecture</a></h3>
+          <p>Specifica l&#x27;architettura elettronica del sistema: PC controller, Master ESP32, nodi specializzati, alimentazione, bus I2C, pinout, sensori, attuatori e protezioni.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Firmware</span> <span class="badge">Protocollo operativo</span></div>
+          <h3><a href="documenti.html#firmware-protocol">Documento 04 - Firmware e Communication Protocol</a></h3>
+          <p>Documento di specifica per firmware, messaggi e comunicazione tra dashboard, Master ESP32 e nodi. Il PDF risulta principalmente visuale/scansionato, ma il suo ruolo e chiaro: rendere il sistema comandabile, loggabile e validabile.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Software</span> <span class="badge">Centro operativo</span></div>
+          <h3><a href="documenti.html#dashboard-controller">Documento 05 - PC Controller e Dashboard</a></h3>
+          <p>Specifica funzionale della dashboard: interfaccia web, Web Serial bridge, pannello Master, pannelli nodi, terminale, telemetria, camera, simulazione e mappa hardware-software.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Simulazione</span> <span class="badge">Digital twin parametrico</span></div>
+          <h3><a href="documenti.html#simulation-engine">Documento 06 - Simulation &amp; Dimensional Engine</a></h3>
+          <p>Trasforma l&#x27;idea di dimensioni estese in un motore computazionale serio: 3D come spazio, 4D come tempo/stato, 5D come parametri fisici e 6D come layer di comportamento/controllo.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Validazione</span> <span class="badge">Piano di test</span></div>
+          <h3><a href="documenti.html#testing-validation">Documento 07 - Testing &amp; Validation Plan</a></h3>
+          <p>Piano esteso per validare Master, sei nodi, controller PC, protocollo JSON/seriale, telemetria, safety layer, simulazione e demo finale.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Design fisico</span> <span class="badge">Morfologia e CAD</span></div>
+          <h3><a href="documenti.html#physical-design-cad">Documento 08 - Physical Design &amp; CAD</a></h3>
+          <p>Trasforma il MicroBot nero da idea visiva a specifica fisica: shell, nucleo centrale, docking ring, viste tecniche, mockup estetico e prototipo funzionale piu grande.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Sicurezza</span> <span class="badge">Analisi rischi</span></div>
+          <h3><a href="documenti.html#risk-safety">Documento 09 - Risk &amp; Safety</a></h3>
+          <p>Documento dedicato ai rischi elettrici, termici, meccanici, magnetici, software, demo, privacy e comunicazione. Anche se il PDF e poco estraibile in testo, e centrale per rendere MicroBot credibile.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Demo</span> <span class="badge">Sequenza operativa</span></div>
+          <h3><a href="documenti.html#demo-runbook">Documento 10 - Demo Script &amp; Runbook</a></h3>
+          <p>Runbook per mostrare MicroBot in modo ordinato: preflight, setup, sequenza demo, cosa dire, cosa cliccare, cosa misurare e come recuperare se un modulo non risponde.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Comunicazione</span> <span class="badge">Narrativa del progetto</span></div>
+          <h3><a href="documenti.html#pitch-strategy">Documento 11 - Pitch Deck Strategy</a></h3>
+          <p>Converte il materiale tecnico in una presentazione chiara per audience diverse: professori, collaboratori tecnici, portfolio, community e potenziali investitori.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Pubblicazione</span> <span class="badge">Strategia repo</span></div>
+          <h3><a href="documenti.html#github-publication">Documento 12 - GitHub &amp; Portfolio Publication Plan</a></h3>
+          <p>Piano per trasformare il workspace privato in presenza pubblica ordinata: repository, README, release, portfolio page, demo assets, naming, maturita e cosa tenere privato.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Libro</span> <span class="badge">Architettura editoriale</span></div>
+          <h3><a href="documenti.html#indice-libro">Indice Finale del Libro Tecnico</a></h3>
+          <p>Indice editoriale per trasformare tutto il materiale MicroBot in un libro tecnico progressivo: visione, teoria, hardware, software, prototipi, simulazione, AI, BCI, sicurezza, dati e roadmap.</p>
+        </article>
+        
+        <article class="doc-card">
+          <div><span class="badge">Roadmap</span> <span class="badge">Piano operativo</span></div>
+          <h3><a href="documenti.html#roadmap-sei-mesi">Roadmap 6 Mesi Prototipi Reali</a></h3>
+          <p>Pianifica sei mesi per passare da ecosistema teorico-documentale a dimostratore fisico e software funzionante: controller PC, Master, sei nodi, simulazione sincronizzata e mockup nero.</p>
+        </article>
+        </div>
+      </section>
+      <section id="limiti">
+        <h2>Limiti dichiarati</h2>
+        <p>La documentazione parla di una piattaforma sperimentale e prototipale. Dove non ci sono ancora misure reali, il sito usa parole come <em>stima</em>, <em>mockup</em>, <em>simulazione</em> o <em>roadmap</em>. Questo rende il progetto piu difendibile: mostra ambizione, ma separa chiaramente cio che e gia documentato da cio che va ancora validato.</p>
+      </section>
+    </article>
+    
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

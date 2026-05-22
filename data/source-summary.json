@@ -1,0 +1,1896 @@
+{
+  "local_documents": [
+    {
+      "slug": "documentazione-generale",
+      "title": "Documentazione MicroBot",
+      "filename": "Documentazione_microbot.pdf",
+      "area": "Indice generale",
+      "role": "Archivio maestro",
+      "pages": 1178,
+      "extractable": true,
+      "size_mb": 7.42,
+      "pdf": "assets/pdf/documentazione-generale.pdf",
+      "sample": "INDICE COMPLETO DEL SISTEMA MICROBOT SEZIONE 1 — Visione e Origine del Sistema 1.Nascita del progetto MicroBot 2.Idea iniziale e transizione da robot singolo a sistema distribuito 3.Differenza tra robotica classica e swarm robotics 4.Cambio di paradigma: da sistemi autonomi a sistemi emergenti 5.Concetto di materia programmabile 6.Forma fisica controllata tramite logica software 7.Obiettivi tecnici del progetto 8.Obiettivi scientifici del progetto 9.Obiettivi imprenditoriali del progetto 10.Evoluzione dell’idea nel tempo 11.Trasformazione da prototipo a ecosistema SEZIONE 2 — Struttura delle Cartelle e dello ZIP 12.Analisi della cartella principale (workspace ZIP) 13.Struttura generale del sistema di file 14.Organizzazione per domini progettuali 15.Separazione tra MicroBot e progetti esterni 16.Cartelle di documentazione tecnica 17.PDF, relazioni e tesi 18.Cartelle di codice sorgente 19."
+    },
+    {
+      "slug": "executive-summary",
+      "title": "Documento 01 - Executive Summary",
+      "filename": "MicroBot_Documento_01_Executive_Summary.pdf",
+      "area": "Strategia",
+      "role": "Sintesi presentabile",
+      "pages": 9,
+      "extractable": true,
+      "size_mb": 0.2,
+      "pdf": "assets/pdf/executive-summary.pdf",
+      "sample": "MicroBot Ecosystem - Documento 01 Executive Summary - v0.1 MICROBOT ECOSYSTEM Documento 01 - Executive Summary Sintesi strategica, tecnica e progettuale del sistema MicroBot Campo Descrizione Progetto MicroBot Ecosystem Autore progetto Anton Documento 01 / 12 - Executive Summary Versione v0.1 Scopo Fornire una sintesi chiara, difendibile e presentabile del progetto, utile per professori, collaboratori, portfolio, pitch e sviluppo operativo. Nota di posizionamento Questo documento non sostituisce la tesi completa, il manuale operativo dei prototipi o i documenti tecnici di dettaglio. Il suo ruolo è sintetizzare il progetto in poche pagine ad alta densità informativa, mantenendo coerenza con la documentazione già prodotta e con la roadmap dei sei mesi. MicroBot Ecosystem - Documento 01 Executive Summary - v0.1 Indice sintetico 1. 1. Sintesi in una frase 2. 2. Abstract esteso 3. 3. Problema"
+    },
+    {
+      "slug": "bom-acquisti",
+      "title": "Documento 02 - BOM e Piano Acquisti",
+      "filename": "MicroBot_Documento_02_BOM_Piano_Acquisti.pdf",
+      "area": "Hardware",
+      "role": "Distinta base",
+      "pages": 9,
+      "extractable": true,
+      "size_mb": 0.34,
+      "pdf": "assets/pdf/bom-acquisti.pdf",
+      "sample": "MicroBot Ecosystem - Documento 02 - BOM e Piano Acquisti MICROBOT ECOSYSTEM Documento 02 - BOM, Piano Acquisti e Organizzazione Componenti Distinta base operativa per Master ESP32, sei nodi MicroBot, controller PC, simulazione e mockup fisico Campo Valore Versione documento v0.1 Autore progetto Anton Sistema coperto MicroBot Ecosystem v0.1 - Master + 6 nodi + dashboard + mockup Obiettivo Definire cosa comprare, quando comprarlo, quanto costa e come organizzare i componenti Uso previsto Costruzione prototipi, pianificazione budget, documentazione tecnica, preparazione demo 1. Scopo del documento Questo documento definisce la distinta base dei materiali, il piano di acquisto e la logica di organizzazione dei componenti necessari per costruire una prima versione dimostrativa del sistema MicroBot. La versione qui descritta non pretende di realizzare immediatamente micro-robot miniaturizzati "
+    },
+    {
+      "slug": "hardware-architecture",
+      "title": "Documento 03 - Hardware Architecture",
+      "filename": "MicroBot_Documento_03_Hardware_Architecture.pdf",
+      "area": "Hardware",
+      "role": "Specifiche elettroniche",
+      "pages": 9,
+      "extractable": true,
+      "size_mb": 0.76,
+      "pdf": "assets/pdf/hardware-architecture.pdf",
+      "sample": "MicroBot Ecosystem - Documento 03 Hardware Architecture Specification - v0.1 MICROBOT ECOSYSTEM Documento 03 dei 12 Hardware Architecture Specification Architettura elettronica, alimentazione, pinout, sicurezza e integrazione dei sette prototipi Figura 1 - Vista concettuale dei circuiti dei sei prototipi MicroBot. Versione: v0.1 | Autore progetto: Anton | Uso: progettazione, costruzione e validazione hardware MicroBot MicroBot Ecosystem - Documento 03 Hardware Architecture Specification - v0.1 1. Scopo del documento Questo documento definisce l’architettura hardware di MicroBot Ecosystem nella sua versione prototipale v0.1. Il suo obiettivo è trasformare il materiale teorico e operativo del progetto in una specifica elettronica concreta: quali blocchi hardware esistono, come comunicano, come vengono alimentati, quali pin usare, quali protezioni inserire e come collegare Master, nodi, das"
+    },
+    {
+      "slug": "firmware-protocol",
+      "title": "Documento 04 - Firmware e Communication Protocol",
+      "filename": "MicroBot_Documento_04_Firmware_Communication_Protocol.pdf",
+      "area": "Firmware",
+      "role": "Protocollo operativo",
+      "pages": 10,
+      "extractable": true,
+      "size_mb": 0.28,
+      "pdf": "assets/pdf/firmware-protocol.pdf",
+      "sample": "MicroBot Ecosystem - Documento 04 - Firmware & Communication Protocol Specification MICROBOT ECOSYSTEM Documento 04 dei 12 Firmware & Communication Protocol Specification Specifica firmware, protocollo JSON, stati, comandi, heartbeat, telemetria, errori e mapping dashboard- hardware. Campo Valore Progetto MicroBot Ecosystem Documento 04 - Firmware & Communication Protocol Versione v0.1 - prototype specification Obiettivo Definire il linguaggio operativo comune tra PC Controller, ESP32 Master e sei nodi MicroBot. Ambito Firmware Master, firmware nodi, protocollo JSON, stati, comandi, heartbeat, telemetria, error handling e test. Output pratico Base tecnica per scrivere il codice del Master, dei nodi e del bridge con dashboard PC. MicroBot Ecosystem - Documento 04 - Firmware & Communication Protocol Specification 1. Scopo del documento Questo documento definisce il quarto blocco tecnico de"
+    },
+    {
+      "slug": "dashboard-controller",
+      "title": "Documento 05 - PC Controller e Dashboard",
+      "filename": "MicroBot_Documento_05_PC_Controller_Dashboard_Specification.pdf",
+      "area": "Software",
+      "role": "Centro operativo",
+      "pages": 12,
+      "extractable": true,
+      "size_mb": 0.27,
+      "pdf": "assets/pdf/dashboard-controller.pdf",
+      "sample": "MICROBOT ECOSYSTEM Documento 05 dei 12 PC Controller & Dashboard Specification Specifiche funzionali, architetturali e implementative della dashboard di controllo MicroBot Scopo del documento Questo documento definisce il controller da PC e la dashboard web del sistema MicroBot. La dashboard è il centro operativo che collega l’interfaccia utente, il Master ESP32, i sei nodi prototipali, la telemetria, la camera, il terminale operativo e la simulazione 3D/4D/5D/6D. Il documento traduce la visione progettuale in una specifica concreta per lo sviluppo software. Campo Valore Progetto MicroBot Ecosystem Documento 05 - PC Controller & Dashboard Specification Versione v0.1 Autore progetto Anton Ruolo del documento Definire struttura, funzioni e roadmap della dashboard PC Collegamento principale PC -> Dashboard -> Master ESP32 -> Nodi -> Telemetria -> Simulazione Indice del documento 1. Sintesi "
+    },
+    {
+      "slug": "simulation-engine",
+      "title": "Documento 06 - Simulation & Dimensional Engine",
+      "filename": "MicroBot_Documento_06_Simulation_Dimensional_Engine_Specification.pdf",
+      "area": "Simulazione",
+      "role": "Digital twin parametrico",
+      "pages": 8,
+      "extractable": true,
+      "size_mb": 0.21,
+      "pdf": "assets/pdf/simulation-engine.pdf",
+      "sample": "MicroBot Ecosystem - Documento 06 - Simulation & Dimensional Engine Specification MICROBOT ECOSYSTEM Documento 06 dei 12 Simulation & Dimensional Engine Specification Specifiche estese per simulazione 3D/4D/5D/6D, mapping hardware-simulazione e stati estesi MicroBot Scopo del documento: Definire in modo tecnico e difendibile il motore simulativo del progetto MicroBot, evitando formulazioni pseudoscientifiche e trasformando il concetto di dimensioni estese in un sistema computazionale parametrico, visuale e collegabile ai prototipi fisici. Versione Stato Uso previsto v0.1 Documento operativo Base per implementazione dashboard, simulatore, demo e tesi tecnica v0.2 futura Da aggiornare dopo i primi test Integrazione dati reali e calibrazione hardware MicroBot Ecosystem - Documento 06 - Simulation & Dimensional Engine Specification Indice sintetico 1. Obiettivo del documento 2. Posizionament"
+    },
+    {
+      "slug": "testing-validation",
+      "title": "Documento 07 - Testing & Validation Plan",
+      "filename": "MicroBot_Documento_07_Testing_Validation_Plan (1).pdf",
+      "area": "Validazione",
+      "role": "Piano di test",
+      "pages": 12,
+      "extractable": true,
+      "size_mb": 0.39,
+      "pdf": "assets/pdf/testing-validation.pdf",
+      "sample": "MicroBot Ecosystem - Documento 07 - Testing & Validation Plan MICROBOT ECOSYSTEM Documento 07 dei 12 Testing & Validation Plan Piano esteso di test, validazione, sicurezza, integrazione hardware-software e demo finale dei prototipi MicroBot Scopo del documento: Definire una metodologia di test ordinata per validare il MicroBot Ecosystem dalla breadboard alla demo integrata: Master ESP32, sei nodi fisici, controller PC, protocollo JSON, telemetria, safety layer, simulazione 3D/4D/5D/6D e presentazione finale. Versione Stato Uso previsto v0.1 Documento operativo Base per costruzione, debugging, checklist, relazione tecnica e video demo v0.2 futura Da aggiornare dopo i primi test reali Metriche quantitative, report misure, dataset telemetria e stress test wireless MicroBot Ecosystem - Documento 07 - Testing & Validation Plan Indice sintetico 1. Obiettivo e filosofia di validazione 2. Sistem"
+    },
+    {
+      "slug": "physical-design-cad",
+      "title": "Documento 08 - Physical Design & CAD",
+      "filename": "MicroBot_Documento_08_Physical_Design_CAD_Specification.pdf",
+      "area": "Design fisico",
+      "role": "Morfologia e CAD",
+      "pages": 8,
+      "extractable": true,
+      "size_mb": 0.47,
+      "pdf": "assets/pdf/physical-design-cad.pdf",
+      "sample": "MicroBot Ecosystem - Documento 08 - Physical Design & CAD Specification MicroBot Ecosystem Documento 08 dei 12 - Physical Design & CAD Specification Specifiche fisiche, morfologia, CAD, mockup nero realistico e percorso di miniaturizzazione Figura 1 - Concept sheet del MicroBot nero: corpo compatto, shell opaca, nucleo centrale, docking ring e viste tecniche. Scopo del documento Questo documento trasforma l'idea visiva del MicroBot nero in una specifica fisica e CAD realizzabile. Il focus non e' costruire subito una micro-macchina perfetta da 24 mm, ma definire un percorso realistico: mockup estetico miniaturizzato, prototipo funzionale piu' grande, e successiva evoluzione verso miniaturizzazione, PCB e swarm fisico. 1. Posizionamento del documento Il Physical Design & CAD Specification e' il documento che collega tre aree del progetto MicroBot: la visione estetica del microbot nero, la "
+    },
+    {
+      "slug": "risk-safety",
+      "title": "Documento 09 - Risk & Safety",
+      "filename": "MicroBot_Documento_09_Risk_Safety_Document.pdf",
+      "area": "Sicurezza",
+      "role": "Analisi rischi",
+      "pages": 9,
+      "extractable": true,
+      "size_mb": 0.6,
+      "pdf": "assets/pdf/risk-safety.pdf",
+      "sample": "MicroBot Ecosystem - Documento 09 - Risk & Safety Document MicroBot Ecosystem Documento 09 dei 12 - Risk & Safety Document Analisi dei rischi, safety layer, protezione elettronica, procedure operative e sicurezza della demo MicroBot v0.1 Figura 1 - Circuiti concettuali dei sei prototipi: base di riferimento per analisi elettrica, alimentazione, sensori, attuatori e sicurezza. Scopo del documento Questo documento definisce il livello di rischio e sicurezza del sistema MicroBot v0.1. Il suo obiettivo non e' bloccare la sperimentazione, ma renderla controllata: ogni prototipo deve essere costruito, alimentato, comandato, testato e dimostrato con procedure ripetibili, limiti espliciti e meccanismi di arresto sicuro. Indice del documento  1. Posizionamento del Risk & Safety Document  2. Filosofia di sicurezza del progetto MicroBot  3. Sistema sotto analisi e confini della v0.1  4. Classif"
+    },
+    {
+      "slug": "demo-runbook",
+      "title": "Documento 10 - Demo Script & Runbook",
+      "filename": "MicroBot_Documento_10_Demo_Script_Runbook.pdf",
+      "area": "Demo",
+      "role": "Sequenza operativa",
+      "pages": 12,
+      "extractable": true,
+      "size_mb": 0.47,
+      "pdf": "assets/pdf/demo-runbook.pdf",
+      "sample": "MicroBot Ecosystem - Documento 10 - Demo Script & Presentation Runbook MICROBOT ECOSYSTEM Documento 10 dei 12 Demo Script & Presentation Runbook Runbook operativo per registrare, presentare e validare la demo MicroBot v0.1 Master ESP32 - Sei nodi fisici - Controller PC - Simulazione 3D/4D/5D/6D Versione documento: v0.1 | Data: 2026-05-11 | Autore progetto: Anton MicroBot Ecosystem - Documento 10 - Demo Script & Presentation Runbook Indice operativo 1. 1. Scopo del documento 2. 2. Messaggio centrale della demo 3. 3. Architettura dimostrativa 4. 4. Materiale necessario 5. 5. Setup tecnico prima della registrazione 6. 6. Versioni della demo 7. 7. Storyboard completo della demo finale 8. 8. Script parlato scena per scena 9. 9. Sequenza tecnica hardware e dashboard 10. 10. Segmento simulazione 3D/4D/5D/6D 11. 11. Inquadrature, camera e registrazione 12. 12. Fallback e demo offline 13. 13. Sic"
+    },
+    {
+      "slug": "pitch-strategy",
+      "title": "Documento 11 - Pitch Deck Strategy",
+      "filename": "MicroBot_Documento_11_Pitch_Deck_Content_Strategy.pdf",
+      "area": "Comunicazione",
+      "role": "Narrativa del progetto",
+      "pages": 12,
+      "extractable": true,
+      "size_mb": 0.24,
+      "pdf": "assets/pdf/pitch-strategy.pdf",
+      "sample": "MicroBot Ecosystem - Documento 11 - Pitch Deck Content & Presentation Strategy MicroBot v0.1 Documentation Series - Strategic Communication Document MICROBOT ECOSYSTEM Documento 11 dei 12 Pitch Deck Content & Presentation Strategy Contenuto strategico per presentare MicroBot a professori, collaboratori tecnici, community, portfolio e potenziali investitori. Field Value Project MicroBot Ecosystem Document 11 - Pitch Deck Content & Presentation Strategy Version v0.1 Purpose Convertire il materiale tecnico-documentale MicroBot in una narrazione presentabile, sintetica e difendibile. Primary output Pitch deck da 10-12 slide, script parlato, varianti per pubblico e checklist di presentazione. MicroBot Ecosystem - Documento 11 - Pitch Deck Content & Presentation Strategy MicroBot v0.1 Documentation Series - Strategic Communication Document Indice del documento 1. Scopo del documento 2. Posizio"
+    },
+    {
+      "slug": "github-publication",
+      "title": "Documento 12 - GitHub & Portfolio Publication Plan",
+      "filename": "MicroBot_Documento_12_GitHub_Portfolio_Publication_Plan.pdf",
+      "area": "Pubblicazione",
+      "role": "Strategia repo",
+      "pages": 12,
+      "extractable": true,
+      "size_mb": 0.32,
+      "pdf": "assets/pdf/github-publication.pdf",
+      "sample": "MicroBot Ecosystem - Documento 12 - GitHub & Portfolio Publication Plan MICROBOT ECOSYSTEM Documento 12 dei 12 GitHub & Portfolio Publication Plan Strategia di pubblicazione, organizzazione repository, portfolio tecnico, release, README e comunicazione professionale Scopo del documento Questo documento definisce come trasformare MicroBot Ecosystem da workspace privato e materiale tecnico esteso in un pacchetto pubblico ordinato, difendibile e presentabile. L obiettivo non e pubblicare tutto indistintamente, ma costruire una presenza GitHub e portfolio capace di mostrare il progetto in modo professionale, progressivo e verificabile. Campo Valore Progetto MicroBot Ecosystem Documento 12 - GitHub & Portfolio Publication Plan Versione v0.1 Orizzonte operativo 0-6 mesi, con estensione verso v0.2 e v0.3 Output principale Repository pubblici ordinati, README, release, portfolio page, demo asset"
+    },
+    {
+      "slug": "indice-libro",
+      "title": "Indice Finale del Libro Tecnico",
+      "filename": "MicroBot_Ecosystem_Indice_Finale_Libro.pdf",
+      "area": "Libro",
+      "role": "Architettura editoriale",
+      "pages": 25,
+      "extractable": true,
+      "size_mb": 0.33,
+      "pdf": "assets/pdf/indice-libro.pdf",
+      "sample": "MicroBot Ecosystem - Indice finale del libro MICROBOT ECOSYSTEM Indice finale del libro tecnico Dalla robotica distribuita alla materia programmabile: architettura, simulazione, prototipi fisici, visione artificiale e stati estesi della materia Documento di struttura editoriale - Versione indice generale Autore progetto: Anton Documento generato come base per il libro unico MicroBot MicroBot Ecosystem - Indice finale del libro Nota introduttiva Questo documento raccoglie l’indice finale proposto per trasformare tutto il materiale MicroBot in un unico libro tecnico. La struttura non è pensata come semplice sommario di una relazione breve, ma come architettura editoriale completa per un’opera ampia, capace di integrare teoria, software, hardware, prototipi, simulazione, visione artificiale, sicurezza, AI, documentazione e roadmap futura. La logica del libro è progressiva: si parte dall’ori"
+    },
+    {
+      "slug": "roadmap-sei-mesi",
+      "title": "Roadmap 6 Mesi Prototipi Reali",
+      "filename": "MicroBot_Roadmap_6_Mesi_Prototipi_Reali.pdf",
+      "area": "Roadmap",
+      "role": "Piano operativo",
+      "pages": 12,
+      "extractable": true,
+      "size_mb": 0.24,
+      "pdf": "assets/pdf/roadmap-sei-mesi.pdf",
+      "sample": "MicroBot Ecosystem - Roadmap 6 mesi - Documento operativo MicroBot Ecosystem Roadmap operativa di 6 mesi per costruire prototipi reali, simulazione 3D/4D/5D/6D e controller da PC Documento esteso di pianificazione tecnica - Versione v0.1 Data: 2026-05-10 MicroBot Ecosystem - Roadmap 6 mesi - Documento operativo Sintesi esecutiva Questo documento definisce una roadmap realistica di sei mesi per trasformare il progetto MicroBot da ecosistema teorico-documentale a dimostratore fisico e software funzionante. L'obiettivo non è costruire immediatamente un microbot miniaturizzato perfetto, ma creare una versione v0.1 credibile: controller da PC, Master ESP32, sei nodi prototipali specializzati, simulazione 3D/4D/5D/6D sincronizzata e un mockup nero realistico del design finale. La strategia corretta è separare il nucleo funzionale dall'estetica industriale. Il nucleo funzionale dimostra comunic"
+    }
+  ],
+  "pages": {
+    "available": true,
+    "members": [
+      "Index/Document.iwa",
+      "Index/ViewState.iwa",
+      "Index/CalculationEngine-1732585.iwa",
+      "Index/AnnotationAuthorStorage-1732584.iwa",
+      "Index/DocumentStylesheet.iwa",
+      "Index/DocumentMetadata.iwa",
+      "Index/Metadata.iwa",
+      "Metadata/Properties.plist",
+      "Metadata/DocumentIdentifier",
+      "Metadata/BuildVersionHistory.plist",
+      "preview.jpg",
+      "preview-micro.jpg",
+      "preview-web.jpg"
+    ],
+    "previews": [
+      "assets/pages-preview/preview.jpg",
+      "assets/pages-preview/preview-micro.jpg",
+      "assets/pages-preview/preview-web.jpg"
+    ]
+  },
+  "archive_summary": {
+    "entries": 204693,
+    "files": 177173,
+    "uncompressed_gb": 5.72,
+    "top_dirs": [
+      [
+        "__MACOSX/finefine",
+        102304
+      ],
+      [
+        "finefine/hacking",
+        37888
+      ],
+      [
+        "finefine/andre_completo",
+        29157
+      ],
+      [
+        "finefine/MICROBOT_ECOSYSTEM2",
+        5646
+      ],
+      [
+        "finefine/.venv",
+        1119
+      ],
+      [
+        "finefine/MicroBot_ULTRA_Premium_Project_v10_AR_PRO_PYTHON_SUITE_V3",
+        315
+      ],
+      [
+        "finefine/MICROBOT_WEB_FINAL_STRUCTURE_FINAL_v9",
+        271
+      ],
+      [
+        "finefine/microbot_v7_source",
+        145
+      ],
+      [
+        "finefine/MicroBot_ULTRA_Premium_Project_v8_FIXED_RUNNABLE",
+        125
+      ],
+      [
+        "finefine/MicroBot_Gesture_Controlled_Swarm_Interface_v1_8_LabEdition",
+        76
+      ],
+      [
+        "finefine/web",
+        58
+      ],
+      [
+        "finefine/DOCUMENTAZIONE 2",
+        33
+      ],
+      [
+        "finefine/Anton_Morosi_Portfolio_STEP5_Proof_Of_Work 4",
+        22
+      ],
+      [
+        "finefine/MicroBot_LaTeX_Documentation",
+        3
+      ],
+      [
+        "finefine/schemi_elettrici",
+        2
+      ],
+      [
+        "finefine/Archivio.zip",
+        1
+      ],
+      [
+        "finefine/.DS_Store",
+        1
+      ],
+      [
+        "finefine/web.zip",
+        1
+      ],
+      [
+        "finefine/MICROBOT_ECOSYSTEM.zip",
+        1
+      ],
+      [
+        "finefine/create_microbot_structure.py",
+        1
+      ],
+      [
+        "finefine/Archivio 2.zip",
+        1
+      ],
+      [
+        "finefine/DOCUMENTAZIONE 2.zip",
+        1
+      ],
+      [
+        "finefine/MICROBOT_ECOSYSTEM",
+        1
+      ],
+      [
+        "finefine/.vscode",
+        1
+      ]
+    ],
+    "extensions": [
+      [
+        ".py",
+        44651
+      ],
+      [
+        ".pyc",
+        41502
+      ],
+      [
+        "[noext]",
+        30582
+      ],
+      [
+        ".md",
+        22990
+      ],
+      [
+        ".png",
+        3242
+      ],
+      [
+        ".html",
+        3234
+      ],
+      [
+        ".pyi",
+        2848
+      ],
+      [
+        ".js",
+        2652
+      ],
+      [
+        ".txt",
+        2244
+      ],
+      [
+        ".csv",
+        2108
+      ],
+      [
+        ".so",
+        2064
+      ],
+      [
+        ".json",
+        1962
+      ],
+      [
+        ".h",
+        1760
+      ],
+      [
+        ".tex",
+        1696
+      ],
+      [
+        ".css",
+        1134
+      ],
+      [
+        ".gif",
+        964
+      ],
+      [
+        ".c",
+        846
+      ],
+      [
+        ".jpg",
+        736
+      ],
+      [
+        ".docx",
+        728
+      ],
+      [
+        ".typed",
+        635
+      ],
+      [
+        ".mat",
+        600
+      ],
+      [
+        ".gz",
+        451
+      ],
+      [
+        ".pdf",
+        408
+      ],
+      [
+        ".svg",
+        336
+      ],
+      [
+        ".yaml",
+        312
+      ],
+      [
+        ".pyx",
+        256
+      ],
+      [
+        ".ttf",
+        248
+      ],
+      [
+        ".f90",
+        244
+      ],
+      [
+        ".afm",
+        240
+      ],
+      [
+        ".wav",
+        232
+      ]
+    ],
+    "dependency_like_files": 111763,
+    "macosx_files": 102304,
+    "pdf_count": 204,
+    "doc_like_count": 18755,
+    "inventory_csv": "data/finefine2_inventory.csv"
+  },
+  "archive_pdf_catalog": [
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/back.pdf",
+      "title": "back.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/hacking/Coursera USFQN722CESA.pdf",
+      "title": "Coursera USFQN722CESA.pdf",
+      "size_mb": 0.28,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/hacking/Coursera Z8F9Z7PECSGC.pdf",
+      "title": "Coursera Z8F9Z7PECSGC.pdf",
+      "size_mb": 0.28,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/05_SITI_EDUCATIVI/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/web/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/web/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "title": "Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "size_mb": 0.12,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/filesave.pdf",
+      "title": "filesave.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/forward.pdf",
+      "title": "forward.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/hand.pdf",
+      "title": "hand.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/help.pdf",
+      "title": "help.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/home.pdf",
+      "title": "home.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/matplotlib.pdf",
+      "title": "matplotlib.pdf",
+      "size_mb": 0.02,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/move.pdf",
+      "title": "move.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/qt4_editor_options.pdf",
+      "title": "qt4_editor_options.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/subplots.pdf",
+      "title": "subplots.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/zoom_to_rect.pdf",
+      "title": "zoom_to_rect.pdf",
+      "size_mb": 0.0,
+      "category": "Archive PDF"
+    },
+    {
+      "path": "finefine/hacking/DOT India EH 7.5.2018.pdf",
+      "title": "DOT India EH 7.5.2018.pdf",
+      "size_mb": 3.81,
+      "category": "Cybersecurity reference"
+    },
+    {
+      "path": "finefine/hacking/Hacking with Kali Linux - A Beginner's Guide to Ethical Hacking with Kali & Cybersecurity, Includes Linux Command Line, Penetration Testing, Security Systems and Tools for Computer by Stephen Fletcher.pdf",
+      "title": "Hacking with Kali Linux - A Beginner's Guide to Ethical Hacking with Kali & Cybersecurity, Includes Linux Command Line, Penetration Testing, Security Systems and Tools for Computer by Stephen Fletcher.pdf",
+      "size_mb": 5.61,
+      "category": "Cybersecurity reference"
+    },
+    {
+      "path": "finefine/hacking/Hacking with Kali Linux - A Comprehensive Beginner's Guide to Learn Ethical Hacking. Practical Examples to Learn the Basics of Cybersecurity. Includes Penetration Testing with Kali Linux by ITC ACADEMY.pdf",
+      "title": "Hacking with Kali Linux - A Comprehensive Beginner's Guide to Learn Ethical Hacking. Practical Examples to Learn the Basics of Cybersecurity. Includes Penetration Testing with Kali Linux by ITC ACADEMY.pdf",
+      "size_mb": 4.67,
+      "category": "Cybersecurity reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/03_REFERENCES_PDF/0604449v1_2.pdf",
+      "title": "0604449v1_2.pdf",
+      "size_mb": 0.54,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/03_REFERENCES_PDF/20230918170422_7944_2.pdf",
+      "title": "20230918170422_7944_2.pdf",
+      "size_mb": 6.21,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/Computer Science- An Overview (12th Global Edition).pdf",
+      "title": "Computer Science- An Overview (12th Global Edition).pdf",
+      "size_mb": 32.17,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/03_REFERENCES_PDF/Computer_Science_An_Overview_12th_Global_Edition_2.pdf",
+      "title": "Computer_Science_An_Overview_12th_Global_Edition_2.pdf",
+      "size_mb": 32.17,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/03_REFERENCES_PDF/ElasticityAnisotropyLaminates_2.pdf",
+      "title": "ElasticityAnisotropyLaminates_2.pdf",
+      "size_mb": 14.82,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Neural Networks.pdf",
+      "title": "Neural Networks.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/Neural Networks.pdf",
+      "title": "Neural Networks.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Neural Networks.pdf",
+      "title": "Neural Networks.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/Neural Networks.pdf",
+      "title": "Neural Networks.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/09_AI_SYSTEM/23_DOCUMENTATION/imported_pdf_reference/Neural Networks.pdf",
+      "title": "Neural Networks.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/10_RESEARCH_LAB/20_PAPERS_REFERENCES_AND_SOURCES/imported_pdf_reference/Neural Networks.pdf",
+      "title": "Neural Networks.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/09_AI_SYSTEM/23_DOCUMENTATION/imported_pdf_reference/Neural Networks.pdf",
+      "title": "Neural Networks.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/10_RESEARCH_LAB/20_PAPERS_REFERENCES_AND_SOURCES/imported_pdf_reference/Neural Networks.pdf",
+      "title": "Neural Networks.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/09_AI_SYSTEM/23_DOCUMENTATION/imported_pdf_reference/Neural Networks_from_Archivio.pdf",
+      "title": "Neural Networks_from_Archivio.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/09_AI_SYSTEM/23_DOCUMENTATION/imported_pdf_reference/Neural Networks_from_Archivio.pdf",
+      "title": "Neural Networks_from_Archivio.pdf",
+      "size_mb": 0.37,
+      "category": "External reference"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Copia di Finale finale architettura.pdf",
+      "title": "Copia di Finale finale architettura.pdf",
+      "size_mb": 0.18,
+      "category": "MicroBot adjacent study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Finale finale (2).pdf",
+      "title": "Finale finale (2).pdf",
+      "size_mb": 0.52,
+      "category": "MicroBot adjacent study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/fotocamera biometrica (2).pdf",
+      "title": "fotocamera biometrica (2).pdf",
+      "size_mb": 0.61,
+      "category": "MicroBot adjacent study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Mano (2).pdf",
+      "title": "Mano (2).pdf",
+      "size_mb": 0.58,
+      "category": "MicroBot adjacent study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/back.pdf",
+      "title": "back.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/_archivio_versioni/DOCUMENTAZIONE_v1/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/documentazione_2/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/18_RAW_DOCS/pdf_corpus/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/29_LEGACY_AND_ARCHIVE/duplicate_documents/from_archivio_documentazione_2/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/_archivio_versioni/DOCUMENTAZIONE_v1/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/documentazione_2/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/18_RAW_DOCS/pdf_corpus/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/29_LEGACY_AND_ARCHIVE/duplicate_documents/from_archivio_documentazione_2/codice spiegazione fotocamera (1).pdf",
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Copia di Finale finale architettura.pdf",
+      "title": "Copia di Finale finale architettura.pdf",
+      "size_mb": 0.18,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/Copia di Finale finale architettura.pdf",
+      "title": "Copia di Finale finale architettura.pdf",
+      "size_mb": 0.18,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/Copia di Finale finale architettura.pdf",
+      "title": "Copia di Finale finale architettura.pdf",
+      "size_mb": 0.18,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/05_SITI_EDUCATIVI/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/web/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/web_zip_reference/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/07_HARDWARE_SYSTEM/22_EXPERIMENTAL_HARDWARE/review_queue/magnetism_web_reference_from_DA/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/07_HARDWARE_SYSTEM/22_EXPERIMENTAL_HARDWARE/review_queue/magnetism_web_reference_from_web_zip/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_WEB_FINAL_STRUCTURE_FINAL_v9/01_SOURCE_PROJECTS/04_electromagnetism_microbot/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/web/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/web_zip_reference/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/07_HARDWARE_SYSTEM/22_EXPERIMENTAL_HARDWARE/review_queue/magnetism_web_reference_from_DA/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/07_HARDWARE_SYSTEM/22_EXPERIMENTAL_HARDWARE/review_queue/magnetism_web_reference_from_web_zip/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_WEB_FINAL_STRUCTURE_FINAL_v9/01_SOURCE_PROJECTS/04_electromagnetism_microbot/magnetismo/Custom Coding & Automation Services.pdf",
+      "title": "Custom Coding & Automation Services.pdf",
+      "size_mb": 0.06,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "title": "Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "size_mb": 0.12,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "title": "Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "size_mb": 0.12,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "title": "Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "size_mb": 0.12,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/description of all the projects.pdf",
+      "title": "description of all the projects.pdf",
+      "size_mb": 1.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/description of all the projects.pdf",
+      "title": "description of all the projects.pdf",
+      "size_mb": 1.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/description of all the projects.pdf",
+      "title": "description of all the projects.pdf",
+      "size_mb": 1.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/description of all the projects.pdf",
+      "title": "description of all the projects.pdf",
+      "size_mb": 1.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/_archivio_versioni/DOCUMENTAZIONE_v1/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/documentazione_2/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/18_RAW_DOCS/pdf_corpus/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/29_LEGACY_AND_ARCHIVE/duplicate_documents/from_archivio_documentazione_2/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/_archivio_versioni/DOCUMENTAZIONE_v1/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/documentazione_2/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/18_RAW_DOCS/pdf_corpus/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/29_LEGACY_AND_ARCHIVE/duplicate_documents/from_archivio_documentazione_2/DOCUMENT 1.pdf",
+      "title": "DOCUMENT 1.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/files/Documentazione_microbot.pdf",
+      "title": "Documentazione_microbot.pdf",
+      "size_mb": 7.42,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Documento di Matematica, Fisica e Chimica di MicroBot (2).pdf",
+      "title": "Documento di Matematica, Fisica e Chimica di MicroBot (2).pdf",
+      "size_mb": 0.33,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Documento di Matematica, Fisica e Chimica di MicroBot (2).pdf",
+      "title": "Documento di Matematica, Fisica e Chimica di MicroBot (2).pdf",
+      "size_mb": 0.33,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/filesave.pdf",
+      "title": "filesave.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Finale (1).pdf",
+      "title": "Finale (1).pdf",
+      "size_mb": 0.27,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/Finale (1).pdf",
+      "title": "Finale (1).pdf",
+      "size_mb": 0.27,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Finale (1).pdf",
+      "title": "Finale (1).pdf",
+      "size_mb": 0.27,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/Finale (1).pdf",
+      "title": "Finale (1).pdf",
+      "size_mb": 0.27,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Finale finale (1).pdf",
+      "title": "Finale finale (1).pdf",
+      "size_mb": 0.52,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/Finale finale (1).pdf",
+      "title": "Finale finale (1).pdf",
+      "size_mb": 0.52,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Finale finale (1).pdf",
+      "title": "Finale finale (1).pdf",
+      "size_mb": 0.52,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/Finale finale (1).pdf",
+      "title": "Finale finale (1).pdf",
+      "size_mb": 0.52,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Finale finale (2).pdf",
+      "title": "Finale finale (2).pdf",
+      "size_mb": 0.52,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/forward.pdf",
+      "title": "forward.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/fotocamera biometrica (1).pdf",
+      "title": "fotocamera biometrica (1).pdf",
+      "size_mb": 0.61,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/fotocamera biometrica (1).pdf",
+      "title": "fotocamera biometrica (1).pdf",
+      "size_mb": 0.61,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/fotocamera biometrica (1).pdf",
+      "title": "fotocamera biometrica (1).pdf",
+      "size_mb": 0.61,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/fotocamera biometrica (1).pdf",
+      "title": "fotocamera biometrica (1).pdf",
+      "size_mb": 0.61,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/fotocamera biometrica (2).pdf",
+      "title": "fotocamera biometrica (2).pdf",
+      "size_mb": 0.61,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/hand.pdf",
+      "title": "hand.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/help.pdf",
+      "title": "help.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/home.pdf",
+      "title": "home.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/microbot_v7_source/MicroBot_LaTeX_Thesis_v7_editorial/main.pdf",
+      "title": "main.pdf",
+      "size_mb": 3.26,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/microbot_v7_source/MicroBot_LaTeX_Thesis_v7_editorial/main.pdf",
+      "title": "main.pdf",
+      "size_mb": 3.26,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Mano (1).pdf",
+      "title": "Mano (1).pdf",
+      "size_mb": 0.58,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/Mano (1).pdf",
+      "title": "Mano (1).pdf",
+      "size_mb": 0.58,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Mano (1).pdf",
+      "title": "Mano (1).pdf",
+      "size_mb": 0.58,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/Mano (1).pdf",
+      "title": "Mano (1).pdf",
+      "size_mb": 0.58,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Mano (2).pdf",
+      "title": "Mano (2).pdf",
+      "size_mb": 0.58,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/matplotlib.pdf",
+      "title": "matplotlib.pdf",
+      "size_mb": 0.02,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (3).pdf",
+      "title": "MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (3).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (3).pdf",
+      "title": "MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (3).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/_archivio_versioni/DOCUMENTAZIONE_v1/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/documentazione_2/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/18_RAW_DOCS/pdf_corpus/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/29_LEGACY_AND_ARCHIVE/duplicate_documents/from_archivio_documentazione_2/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/_archivio_versioni/DOCUMENTAZIONE_v1/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/documentazione_2/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/18_RAW_DOCS/pdf_corpus/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/29_LEGACY_AND_ARCHIVE/duplicate_documents/from_archivio_documentazione_2/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (3).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (3).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (3).pdf",
+      "title": "MicroBot OS ╬ôo╠Ç┬╝Γö£Γöñ╬ôo╠ê┬úΓö£┬║╬ôo╠ê┬ú╬ôo╠Ço╠ü Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (3).pdf",
+      "size_mb": 0.1,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_01_Executive_Summary.pdf",
+      "title": "MicroBot_Documento_01_Executive_Summary.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_02_BOM_Piano_Acquisti.pdf",
+      "title": "MicroBot_Documento_02_BOM_Piano_Acquisti.pdf",
+      "size_mb": 0.34,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_03_Hardware_Architecture.pdf",
+      "title": "MicroBot_Documento_03_Hardware_Architecture.pdf",
+      "size_mb": 0.76,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_04_Firmware_Communication_Protocol.pdf",
+      "title": "MicroBot_Documento_04_Firmware_Communication_Protocol.pdf",
+      "size_mb": 0.28,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_05_PC_Controller_Dashboard_Specification.pdf",
+      "title": "MicroBot_Documento_05_PC_Controller_Dashboard_Specification.pdf",
+      "size_mb": 0.27,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_06_Simulation_Dimensional_Engine_Specification.pdf",
+      "title": "MicroBot_Documento_06_Simulation_Dimensional_Engine_Specification.pdf",
+      "size_mb": 0.21,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_07_Testing_Validation_Plan.pdf",
+      "title": "MicroBot_Documento_07_Testing_Validation_Plan.pdf",
+      "size_mb": 0.39,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Ecosystem_Indice_Finale_Libro.pdf",
+      "title": "MicroBot_Ecosystem_Indice_Finale_Libro.pdf",
+      "size_mb": 0.33,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Roadmap_6_Mesi_Prototipi_Reali.pdf",
+      "title": "MicroBot_Roadmap_6_Mesi_Prototipi_Reali.pdf",
+      "size_mb": 0.24,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/microbot_v7_source/microbot_v7_indice_esteso_dettagliato.pdf",
+      "title": "microbot_v7_indice_esteso_dettagliato.pdf",
+      "size_mb": 0.17,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/microbot_v7_source/microbot_v7_indice_esteso_dettagliato.pdf",
+      "title": "microbot_v7_indice_esteso_dettagliato.pdf",
+      "size_mb": 0.17,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MicroBot_Valutazione_Strategica.pdf",
+      "title": "MicroBot_Valutazione_Strategica.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MicroBot_Valutazione_Strategica.pdf",
+      "title": "MicroBot_Valutazione_Strategica.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/MicroBot_Valutazione_Strategica.pdf",
+      "title": "MicroBot_Valutazione_Strategica.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/startup_reference/MicroBot_Valutazione_Strategica.pdf",
+      "title": "MicroBot_Valutazione_Strategica.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/MicroBot_Valutazione_Strategica.pdf",
+      "title": "MicroBot_Valutazione_Strategica.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/startup_reference/MicroBot_Valutazione_Strategica.pdf",
+      "title": "MicroBot_Valutazione_Strategica.pdf",
+      "size_mb": 0.2,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Misure microbot (1).pdf",
+      "title": "Misure microbot (1).pdf",
+      "size_mb": 0.26,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/Misure microbot (1).pdf",
+      "title": "Misure microbot (1).pdf",
+      "size_mb": 0.26,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Misure microbot (1).pdf",
+      "title": "Misure microbot (1).pdf",
+      "size_mb": 0.26,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/Misure microbot (1).pdf",
+      "title": "Misure microbot (1).pdf",
+      "size_mb": 0.26,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Misure microbot (2).pdf",
+      "title": "Misure microbot (2).pdf",
+      "size_mb": 0.26,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Misure microbot (2).pdf",
+      "title": "Misure microbot (2).pdf",
+      "size_mb": 0.26,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Modello matematico e fisico per il sistema MicroBot.pdf",
+      "title": "Modello matematico e fisico per il sistema MicroBot.pdf",
+      "size_mb": 0.31,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Modello matematico e fisico per il sistema MicroBot.pdf",
+      "title": "Modello matematico e fisico per il sistema MicroBot.pdf",
+      "size_mb": 0.31,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/move.pdf",
+      "title": "move.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/qt4_editor_options.pdf",
+      "title": "qt4_editor_options.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Relazione Telemetria (2).pdf",
+      "title": "Relazione Telemetria (2).pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Relazione Telemetria (2).pdf",
+      "title": "Relazione Telemetria (2).pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/Relazione Telemetria (2).pdf",
+      "title": "Relazione Telemetria (2).pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/Relazione Telemetria (2).pdf",
+      "title": "Relazione Telemetria (2).pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/_archivio_versioni/DOCUMENTAZIONE_v1/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/documentazione_2/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/18_RAW_DOCS/pdf_corpus/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/29_LEGACY_AND_ARCHIVE/duplicate_documents/from_archivio_documentazione_2/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/_archivio_versioni/DOCUMENTAZIONE_v1/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/documentazione_2/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/18_RAW_DOCS/pdf_corpus/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/20_FINAL_DOCS/pdf/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/29_LEGACY_AND_ARCHIVE/duplicate_documents/from_archivio_documentazione_2/Relazione Telemetria.pdf",
+      "title": "Relazione Telemetria.pdf",
+      "size_mb": 0.19,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/subplots.pdf",
+      "title": "subplots.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/tesi altri progetti (2).pdf",
+      "title": "tesi altri progetti (2).pdf",
+      "size_mb": 0.87,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/tesi altri progetti (2).pdf",
+      "title": "tesi altri progetti (2).pdf",
+      "size_mb": 0.87,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/tesi altri progetti.pdf",
+      "title": "tesi altri progetti.pdf",
+      "size_mb": 0.79,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/tesi altri progetti.pdf",
+      "title": "tesi altri progetti.pdf",
+      "size_mb": 0.79,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/tesi altri progetti.pdf",
+      "title": "tesi altri progetti.pdf",
+      "size_mb": 0.79,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/tesi altri progetti.pdf",
+      "title": "tesi altri progetti.pdf",
+      "size_mb": 0.79,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/tesi microbot (1).pdf",
+      "title": "tesi microbot (1).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/tesi microbot (1).pdf",
+      "title": "tesi microbot (1).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/tesi microbot (1).pdf",
+      "title": "tesi microbot (1).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/tesi microbot (1).pdf",
+      "title": "tesi microbot (1).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/tesi microbot (2).pdf",
+      "title": "tesi microbot (2).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/tesi microbot (2).pdf",
+      "title": "tesi microbot (2).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/_archivio_versioni/DOCUMENTAZIONE_v1/tesi microbot (2).pdf",
+      "title": "tesi microbot (2).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/tesi microbot (2).pdf",
+      "title": "tesi microbot (2).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/tesi microbot (3).pdf",
+      "title": "tesi microbot (3).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/tesi microbot (3).pdf",
+      "title": "tesi microbot (3).pdf",
+      "size_mb": 2.9,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/tutto insieme (2).pdf",
+      "title": "tutto insieme (2).pdf",
+      "size_mb": 10.4,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/tutto insieme (2).pdf",
+      "title": "tutto insieme (2).pdf",
+      "size_mb": 10.4,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/DOCUMENTAZIONE 2/tutto insieme 2 (2).pdf",
+      "title": "tutto insieme 2 (2).pdf",
+      "size_mb": 3.29,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/DOCUMENTAZIONE 2/tutto insieme 2 (2).pdf",
+      "title": "tutto insieme 2 (2).pdf",
+      "size_mb": 3.29,
+      "category": "MicroBot project study"
+    },
+    {
+      "path": "finefine/hacking/UNIFIED_MICROBOT_PHYSICS_WORKSPACE/01_MICROBOT_FINEFINE/finefine/andre_completo/.venv/lib/python3.14/site-packages/matplotlib/mpl-data/images/zoom_to_rect.pdf",
+      "title": "zoom_to_rect.pdf",
+      "size_mb": 0.0,
+      "category": "MicroBot project study"
+    }
+  ],
+  "archive_copied_pdfs": [
+    {
+      "title": "Copia di Finale finale architettura.pdf",
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Copia di Finale finale architettura.pdf",
+      "category": "MicroBot adjacent study",
+      "size_mb": 0.18,
+      "pdf": "assets/pdf/archivio/archive-01-copia-di-finale-finale-architettura-pdf.pdf"
+    },
+    {
+      "title": "codice spiegazione fotocamera (1).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/codice spiegazione fotocamera (1).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.1,
+      "pdf": "assets/pdf/archivio/archive-02-codice-spiegazione-fotocamera-1-pdf.pdf"
+    },
+    {
+      "title": "Custom Coding & Automation Services.pdf",
+      "path": "finefine/MICROBOT_WEB_FINAL_STRUCTURE_FINAL_v9/01_SOURCE_PROJECTS/04_electromagnetism_microbot/magnetismo/Custom Coding & Automation Services.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.06,
+      "pdf": "assets/pdf/archivio/archive-03-custom-coding-automation-services-pdf.pdf"
+    },
+    {
+      "title": "Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "path": "finefine/MICROBOT_ECOSYSTEM2/05_MICROBOT_DOCUMENTATION/17_IMPORTED_DOCUMENTS/da_mandare_ad_andrea/master_workspace_00_docs/Dalla quarta alla quinta dimensione_ il ruolo del suono e delle onde (4).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.12,
+      "pdf": "assets/pdf/archivio/archive-04-dalla-quarta-alla-quinta-dimensione-il-ruolo-del-suono-e-delle-onde-4-pdf.pdf"
+    },
+    {
+      "title": "description of all the projects.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/description of all the projects.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 1.1,
+      "pdf": "assets/pdf/archivio/archive-05-description-of-all-the-projects-pdf.pdf"
+    },
+    {
+      "title": "DOCUMENT 1.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/DOCUMENT 1.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.2,
+      "pdf": "assets/pdf/archivio/archive-06-document-1-pdf.pdf"
+    },
+    {
+      "title": "Documentazione_microbot.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/files/Documentazione_microbot.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 7.42,
+      "pdf": "assets/pdf/archivio/archive-07-documentazione-microbot-pdf.pdf"
+    },
+    {
+      "title": "Documento di Matematica, Fisica e Chimica di MicroBot (2).pdf",
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Documento di Matematica, Fisica e Chimica di MicroBot (2).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.33,
+      "pdf": "assets/pdf/archivio/archive-08-documento-di-matematica-fisica-e-chimica-di-microbot-2-pdf.pdf"
+    },
+    {
+      "title": "Finale (1).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/Finale (1).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.27,
+      "pdf": "assets/pdf/archivio/archive-09-finale-1-pdf.pdf"
+    },
+    {
+      "title": "Finale finale (1).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/Finale finale (1).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.52,
+      "pdf": "assets/pdf/archivio/archive-10-finale-finale-1-pdf.pdf"
+    },
+    {
+      "title": "fotocamera biometrica (1).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/fotocamera biometrica (1).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.61,
+      "pdf": "assets/pdf/archivio/archive-11-fotocamera-biometrica-1-pdf.pdf"
+    },
+    {
+      "title": "main.pdf",
+      "path": "finefine/microbot_v7_source/MicroBot_LaTeX_Thesis_v7_editorial/main.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 3.26,
+      "pdf": "assets/pdf/archivio/archive-12-main-pdf.pdf"
+    },
+    {
+      "title": "Mano (1).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/Mano (1).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.58,
+      "pdf": "assets/pdf/archivio/archive-13-mano-1-pdf.pdf"
+    },
+    {
+      "title": "MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot OS ΓÇö Evoluzione progressiva del sistema operativo da v0.1 a v2.0 (1).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.1,
+      "pdf": "assets/pdf/archivio/archive-14-microbot-os-evoluzione-progressiva-del-sistema-operativo-da-v0-1-a-v2-0-1-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Documento_01_Executive_Summary.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_01_Executive_Summary.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.2,
+      "pdf": "assets/pdf/archivio/archive-15-microbot-documento-01-executive-summary-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Documento_02_BOM_Piano_Acquisti.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_02_BOM_Piano_Acquisti.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.34,
+      "pdf": "assets/pdf/archivio/archive-16-microbot-documento-02-bom-piano-acquisti-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Documento_03_Hardware_Architecture.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_03_Hardware_Architecture.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.76,
+      "pdf": "assets/pdf/archivio/archive-17-microbot-documento-03-hardware-architecture-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Documento_04_Firmware_Communication_Protocol.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_04_Firmware_Communication_Protocol.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.28,
+      "pdf": "assets/pdf/archivio/archive-18-microbot-documento-04-firmware-communication-protocol-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Documento_05_PC_Controller_Dashboard_Specification.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_05_PC_Controller_Dashboard_Specification.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.27,
+      "pdf": "assets/pdf/archivio/archive-19-microbot-documento-05-pc-controller-dashboard-specification-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Documento_06_Simulation_Dimensional_Engine_Specification.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_06_Simulation_Dimensional_Engine_Specification.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.21,
+      "pdf": "assets/pdf/archivio/archive-20-microbot-documento-06-simulation-dimensional-engine-specification-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Documento_07_Testing_Validation_Plan.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Documento_07_Testing_Validation_Plan.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.39,
+      "pdf": "assets/pdf/archivio/archive-21-microbot-documento-07-testing-validation-plan-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Ecosystem_Indice_Finale_Libro.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Ecosystem_Indice_Finale_Libro.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.33,
+      "pdf": "assets/pdf/archivio/archive-22-microbot-ecosystem-indice-finale-libro-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Roadmap_6_Mesi_Prototipi_Reali.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/MicroBot_Roadmap_6_Mesi_Prototipi_Reali.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.24,
+      "pdf": "assets/pdf/archivio/archive-23-microbot-roadmap-6-mesi-prototipi-reali-pdf.pdf"
+    },
+    {
+      "title": "microbot_v7_indice_esteso_dettagliato.pdf",
+      "path": "finefine/microbot_v7_source/microbot_v7_indice_esteso_dettagliato.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.17,
+      "pdf": "assets/pdf/archivio/archive-24-microbot-v7-indice-esteso-dettagliato-pdf.pdf"
+    },
+    {
+      "title": "MicroBot_Valutazione_Strategica.pdf",
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MicroBot_Valutazione_Strategica.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.2,
+      "pdf": "assets/pdf/archivio/archive-25-microbot-valutazione-strategica-pdf.pdf"
+    },
+    {
+      "title": "Misure microbot (1).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/Misure microbot (1).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.26,
+      "pdf": "assets/pdf/archivio/archive-26-misure-microbot-1-pdf.pdf"
+    },
+    {
+      "title": "Modello matematico e fisico per il sistema MicroBot.pdf",
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/Modello matematico e fisico per il sistema MicroBot.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.31,
+      "pdf": "assets/pdf/archivio/archive-27-modello-matematico-e-fisico-per-il-sistema-microbot-pdf.pdf"
+    },
+    {
+      "title": "Relazione Telemetria.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/Relazione Telemetria.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.19,
+      "pdf": "assets/pdf/archivio/archive-28-relazione-telemetria-pdf.pdf"
+    },
+    {
+      "title": "tesi altri progetti (2).pdf",
+      "path": "finefine/andre_completo/DA_MANDARE_AD_ANDREA/MASTER_WORKSPACE/00_DOCS/tesi altri progetti (2).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.87,
+      "pdf": "assets/pdf/archivio/archive-29-tesi-altri-progetti-2-pdf.pdf"
+    },
+    {
+      "title": "tesi altri progetti.pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/tesi altri progetti.pdf",
+      "category": "MicroBot project study",
+      "size_mb": 0.79,
+      "pdf": "assets/pdf/archivio/archive-30-tesi-altri-progetti-pdf.pdf"
+    },
+    {
+      "title": "tesi microbot (1).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/tesi microbot (1).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 2.9,
+      "pdf": "assets/pdf/archivio/archive-31-tesi-microbot-1-pdf.pdf"
+    },
+    {
+      "title": "tutto insieme (2).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/tutto insieme (2).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 10.4,
+      "pdf": "assets/pdf/archivio/archive-32-tutto-insieme-2-pdf.pdf"
+    },
+    {
+      "title": "tutto insieme 2 (2).pdf",
+      "path": "finefine/DOCUMENTAZIONE 2/tutto insieme 2 (2).pdf",
+      "category": "MicroBot project study",
+      "size_mb": 3.29,
+      "pdf": "assets/pdf/archivio/archive-33-tutto-insieme-2-2-pdf.pdf"
+    }
+  ]
+}
